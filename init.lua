@@ -227,7 +227,9 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
+vim.cmd("command! W write")
+vim.cmd("command! Q quit")
+vim.opt.scrolloff = 8
 -- Decrease update time
 vim.o.updatetime = 50
 vim.o.timeoutlen = 300
